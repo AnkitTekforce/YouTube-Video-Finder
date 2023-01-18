@@ -1,19 +1,64 @@
 {
-  "dependencies": {
-    "electron": "^22.0.1",
-    "modules": "^0.4.0",
-    "node": "^19.3.0",
-    "node-fetch": "^2.6.7"
-  },
-  "name": "youtube-api",
-  "version": "1.0.0",
-  "main": "main.js",
- 
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "dependencies": {
+        "@electron-forge/maker-rpm": "^6.0.4",
+        "electron-squirrel-startup": "^1.0.0",
+        "modules": "^0.4.0",
+        "node": "^19.3.0",
+        "node-fetch": "^2.6.7",
+        "update-electron-app": "^2.0.1"
+    },
+    "name": "youtube-api",
+    "version": "1.0.3",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron .",
+        "package": "electron-forge package",
+        "make": "electron-forge make"
+    },
+    "repository": "https://github.com/AnkitTekforce/YouTube-Video-Finder",
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "Ankit",
+    "license": "ISC",
+    "description": "YouTube Video Finder",
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.4",
+        "@electron-forge/maker-deb": "^6.0.4",
+        "@electron-forge/maker-squirrel": "^6.0.4",
+        "@electron-forge/maker-zip": "^6.0.4",
+        "electron": "^22.0.2",
+        "electron-builder": "^23.6.0"
+    },
+    "config": {
+        "forge": {
+            "packagerConfig": {},
+            "makers": [{
+                    "name": "@electron-forge/maker-squirrel",
+                    "config": {
+                        "name": "YouTube_Video_Finder_App"
+                    }
+                },
+                {
+                    "name": "@electron-forge/maker-zip",
+                    "platforms": [
+                        "darwin"
+                    ]
+                },
+                {
+                    "name": "@electron-forge/maker-deb",
+                    "config": {}
+                },
+                {
+                    "name": "@electron-forge/maker-rpm",
+                    "config": {}
+                }
+            ]
+        }
+    }
 }
