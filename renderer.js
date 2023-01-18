@@ -12,7 +12,7 @@ Button.addEventListener("click", (event) => {
 window.Bridge.KeyWordData((event, data) => {
   console.log(data);
   const container = document.getElementById("container");
-  container.innerHTML = '';
+  container.innerHTML = "";
   const filteredData = data.items.filter(
     (item) => item.id.kind === "youtube#video"
   );
@@ -32,6 +32,3 @@ window.Bridge.KeyWordData((event, data) => {
     container.appendChild(anchor);
   });
 });
-
-
-
