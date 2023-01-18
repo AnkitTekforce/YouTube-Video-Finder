@@ -5,30 +5,38 @@
   grid-template-rows: auto;
   gap: 30px;
   margin: auto;
-  
-
 }
 
 #container > div img {
   width: 100%;
 }
 
-#submit {
+#submit input {
+  position: relative;
   margin-top: 50px;
-  display: grid;
+  margin-left: 30%;
+  width: 50em;
   place-content: center;
   text-align: center;
   place-items: center;
-  height: 5opx;
-
-
-  
+  border-radius: 100px;
+  background: #1d2b3a;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  outline: none;
+  color: white;
 }
 
-#button {
-  display: grid;
+#button input {
+  position: relative;
   place-content: center;
-  margin-top: 8px;
+  margin-left: 50%;
+  margin-top: 12px;
+  width: 100px;
+  height: 2.5em;
+  background: #7c7c7c33;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
 h1 {
