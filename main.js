@@ -42,7 +42,15 @@ app.whenReady().then(() => {
     }
   });
 });
+app.on('ready', () => {
+    updateApp = require('update-electron-app');
 
+    updateApp({
+        repo: "https: //github.com/AnkitTekforce/YouTube-Video-Finder",
+        updateInterval: '1 hour',
+        notifyUser: true
+    });
+});
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
     app.quit();
