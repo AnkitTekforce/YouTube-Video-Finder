@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const fetch = require("node-fetch");
 const path = require("path");
+const updateApp = require('update-electron-app');
 let win
 function createWindow() {
    win = new BrowserWindow({
