@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 const path = require("path");
 const installer = require("./installer");
 installer.install(app);
-installer.update
+installer.update();
 
 let win
 function createWindow() {
