@@ -23,7 +23,7 @@ module.exports = {
             repo = "https://github.com/AnkitTekforce/YouTube-Video-Finder";
         }
         if (repo !== null) {
-            require("electron-update-app")({
+            require("update-electron-app")({
                 repo,
                 notifyUser: true,
             });
