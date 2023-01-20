@@ -1,7 +1,10 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const fetch = require("node-fetch");
 const path = require("path");
-const updateApp = require('update-electron-app');
+const installer = require("./installer");
+installer.install(app);
+installer.update
+
 let win
 function createWindow() {
    win = new BrowserWindow({
@@ -32,17 +35,7 @@ function createWindow() {
   win.loadFile("index.html");
 }
 
-app.whenReady().then(() => {
-  createWindow();
-  win.maximize();
-  
-  app.on("activate", () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow();
-      
-    }
-  });
-});
+
 app.on('ready', () => {
     updateApp = require('update-electron-app');
 
