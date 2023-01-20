@@ -20,7 +20,7 @@ module.exports = {
      update() {
         let repo = null;
         if (process.platform === "win32") {
-            repo = "https: //github.com/AnkitTekforce/YouTube-Video-Finder";
+            repo = "https://github.com/AnkitTekforce/YouTube-Video-Finder";
         }
         if (repo !== null) {
             require("electron-update-app")({
