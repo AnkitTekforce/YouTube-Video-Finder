@@ -1,44 +1,50 @@
 #container {
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 30px;
-  margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    margin: auto;
 }
 
-#container > div img {
-  width: 100%;
+#container>div img {
+    width: 100%;
 }
 
 #submit input {
-  position: relative;
-  margin-top: 50px;
-  margin-left: 30%;
-  width: 50em;
-  place-content: center;
-  text-align: center;
-  place-items: center;
-  border-radius: 100px;
-  background: #1d2b3a;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  outline: none;
-  color: white;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30%;
+    width: 50em;
+    place-content: center;
+    text-align: center;
+    place-items: center;
+    border-radius: 100px;
+    background: #1d2b3a;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    outline: none;
+    color: white;
 }
 
 #button input {
-  position: relative;
-  place-content: center;
-  margin-left: 50%;
-  margin-top: 12px;
-  width: 100px;
-  height: 2.5em;
-  background: #7c7c7c33;
-  border-radius: 100px;
-  cursor: pointer;
+    position: relative;
+    place-content: center;
+    margin-left: 50%;
+    margin-top: 12px;
+    width: 100px;
+    height: 2.5em;
+    background: #7c7c7c33;
+    border-radius: 100px;
+    cursor: pointer;
+    background: rgba(255, 255, 0, 0.816);
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
+    color: white
+}
+
+body {
+    background: black;
 }

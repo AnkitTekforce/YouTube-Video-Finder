@@ -1,6 +1,5 @@
 {
     "dependencies": {
-        "@electron-forge/maker-rpm": "^6.0.4",
         "electron-squirrel-startup": "^1.0.0",
         "modules": "^0.4.0",
         "node": "^19.3.0",
@@ -8,7 +7,7 @@
         "update-electron-app": "^2.0.1"
     },
     "name": "youtube-api",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "main": "main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +15,7 @@
         "package": "electron-forge package",
         "make": "electron-forge make"
     },
-    "repository": "https://github.com/AnkitTekforce/YouTube-Video-Finder",
+    "repository": "https://github.com/AnkitTekforce/YouTube-Video-Finder.git",
     "keywords": [
         "Electron",
         "quick",
@@ -30,6 +29,7 @@
     "devDependencies": {
         "@electron-forge/cli": "^6.0.4",
         "@electron-forge/maker-deb": "^6.0.4",
+        "@electron-forge/maker-rpm": "^6.0.4",
         "@electron-forge/maker-squirrel": "^6.0.4",
         "@electron-forge/maker-zip": "^6.0.4",
         "electron": "^22.0.2",
@@ -47,7 +47,7 @@
                 {
                     "name": "@electron-forge/maker-zip",
                     "platforms": [
-                        "darwin"
+                        "win32"
                     ]
                 },
                 {
