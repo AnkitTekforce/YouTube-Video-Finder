@@ -47,10 +47,18 @@ app.whenReady().then(() => {
     });
 })
 
+<<
+<<
+<< < HEAD
 
 
 
 
+    ===
+    ===
+    = >>>
+    >>>
+    > f955f18032b654055070dc36d9636c800cbc39d3
 
 
 app.on("window-all-closed", () => {
